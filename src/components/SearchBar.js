@@ -9,7 +9,9 @@ class SearchBar extends React.Component{
         //prevent form submit form occuring on enter
         event.preventDefault();
 
-        this.props.onSubmit(this.state.term)
+        //onSearchSubmit App Component function prop
+        //passing term from search bar up to App component
+        this.props.onSubmit(this.state.term);
     }
 
     render(){
